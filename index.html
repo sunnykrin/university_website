@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalTech University Admission Portal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-section">
+            <h1>GlobalTech University</h1>
+            <p>Online Admission Portal 2026</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Admissions</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Scholarships</a></li>
+                <li><a href="#">Campus Life</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+            <h2>Apply For Your Dream Career</h2>
+            <p>
+                Complete your admission process online with our modern and secure university admission portal.
+                Submit your academic information, upload documents, choose programs, and track your application.
+            </p>
+
+            <button>Start Application</button>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="stat-box">
+            <h3>150+</h3>
+            <p>Programs</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>40,000+</h3>
+            <p>Students</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>120+</h3>
+            <p>Countries</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>95%</h3>
+            <p>Placement Rate</p>
+        </div>
+    </section>
+
+    <main class="container">
+
+        <form id="admissionForm">
+
+            <div class="form-header">
+                <h2>University Admission Application Form</h2>
+                <p>Please fill all the required details carefully.</p>
+            </div>
+
+            <!-- PERSONAL DETAILS -->
+            <section class="form-section">
+                <h3>Personal Information</h3>
+
+                <div class="grid-3">
+
+                    <div class="input-box">
+                        <label>First Name *</label>
+                        <input type="text" id="firstName" placeholder="Enter First Name">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Middle Name</label>
+                        <input type="text" placeholder="Enter Middle Name">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Last Name *</label>
+                        <input type="text" placeholder="Enter Last Name">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Date of Birth *</label>
+                        <input type="date">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Gender *</label>
+                        <select>
+                            <option>Select Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Nationality *</label>
+                        <input type="text" placeholder="Nationality">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Email Address *</label>
+                        <input type="email" id="email" placeholder="example@gmail.com">
+                        <small id="emailError"></small>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Mobile Number *</label>
+                        <input type="tel" id="phone" placeholder="10 digit mobile number">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Alternate Mobile Number</label>
+                        <input type="tel">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Aadhar Number</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Passport Number</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Blood Group</label>
+                        <select>
+                            <option>Select Blood Group</option>
+                            <option>A+</option>
+                            <option>A-</option>
+                            <option>B+</option>
+                            <option>B-</option>
+                            <option>O+</option>
+                            <option>O-</option>
+                            <option>AB+</option>
+                            <option>AB-</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ADDRESS -->
+            <section class="form-section">
+                <h3>Address Information</h3>
+
+                <div class="grid-2">
+
+                    <div class="input-box">
+                        <label>Permanent Address *</label>
+                        <textarea></textarea>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Current Address *</label>
+                        <textarea></textarea>
+                    </div>
+
+                    <div class="input-box">
+                        <label>City *</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="input-box">
+                        <label>State *</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Country *</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Postal Code *</label>
+                        <input type="number">
+                    </div>
+                </div>
+            </section>
+
+            <!-- PARENT DETAILS -->
+            <section class="form-section">
+                <h3>Parent / Guardian Information</h3>
+
+                <div class="grid-3">
+
+                    <div class="input-box">
+                        <label>Father's Name *</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Father's Occupation</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Father's Contact Number</label>
+                        <input type="tel">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Mother's Name *</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Mother's Occupation</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Mother's Contact Number</label>
+                        <input type="tel">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Annual Family Income</label>
+                        <input type="number">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Guardian Email</label>
+                        <input type="email">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Emergency Contact *</label>
+                        <input type="tel">
+                    </div>
+                </div>
+            </section>
+
+            <!-- ACADEMIC DETAILS -->
+            <section class="form-section">
+                <h3>Academic Qualifications</h3>
+
+                <table>
+                    <tr>
+                        <th>Qualification</th>
+                        <th>Institution Name</th>
+                        <th>Board / University</th>
+                        <th>Year</th>
+                        <th>Percentage / CGPA</th>
+                    </tr>
+
+                    <tr>
+                        <td>10th</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="number"></td>
+                        <td><input type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td>12th</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="number"></td>
+                        <td><input type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Diploma</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="number"></td>
+                        <td><input type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Graduation</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="number"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- COURSE -->
+            <section class="form-section">
+                <h3>Course Selection</h3>
+
+                <div class="grid-3">
+
+                    <div class="input-box">
+                        <label>Program Level *</label>
+                        <select>
+                            <option>Select Program</option>
+                            <option>Undergraduate</option>
+                            <option>Postgraduate</option>
+                            <option>Doctorate</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Department *</label>
+                        <select>
+                            <option>Select Department</option>
+                            <option>Computer Science</option>
+                            <option>Mechanical Engineering</option>
+                            <option>Artificial Intelligence</option>
+                            <option>Cyber Security</option>
+                            <option>Business Administration</option>
+                            <option>Law</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Preferred Course *</label>
+                        <select>
+                            <option>Select Course</option>
+                            <option>B.Tech CSE</option>
+                            <option>B.Tech AI & ML</option>
+                            <option>BCA</option>
+                            <option>MCA</option>
+                            <option>MBA</option>
+                            <option>M.Tech</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Mode of Study</label>
+                        <select>
+                            <option>Regular</option>
+                            <option>Online</option>
+                            <option>Hybrid</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Preferred Campus</label>
+                        <select>
+                            <option>Main Campus</option>
+                            <option>North Campus</option>
+                            <option>International Campus</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Scholarship Required?</label>
+                        <select>
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <!-- HOSTEL -->
+            <section class="form-section">
+                <h3>Hostel & Transportation</h3>
+
+                <div class="grid-2">
+
+                    <div class="radio-box">
+                        <label>Need Hostel Facility?</label>
+
+                        <div class="radio-options">
+                            <label><input type="radio" name="hostel"> Yes</label>
+                            <label><input type="radio" name="hostel"> No</label>
+                        </div>
+                    </div>
+
+                    <div class="radio-box">
+                        <label>Need Transportation Facility?</label>
+
+                        <div class="radio-options">
+                            <label><input type="radio" name="transport"> Yes</label>
+                            <label><input type="radio" name="transport"> No</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SKILLS -->
+            <section class="form-section">
+                <h3>Skills & Extracurricular Activities</h3>
+
+                <div class="checkbox-container">
+                    <label><input type="checkbox"> Programming</label>
+                    <label><input type="checkbox"> Sports</label>
+                    <label><input type="checkbox"> Robotics</label>
+                    <label><input type="checkbox"> Public Speaking</label>
+                    <label><input type="checkbox"> Graphic Designing</label>
+                    <label><input type="checkbox"> Research</label>
+                    <label><input type="checkbox"> Photography</label>
+                    <label><input type="checkbox"> Leadership</label>
+                </div>
+            </section>
+
+            <!-- DOCUMENT -->
+            <section class="form-section">
+                <h3>Document Upload</h3>
+
+                <div class="grid-3">
+
+                    <div class="upload-card">
+                        <h4>Passport Size Photo</h4>
+                        <input type="file">
+                    </div>
+
+                    <div class="upload-card">
+                        <h4>Signature</h4>
+                        <input type="file">
+                    </div>
+
+                    <div class="upload-card">
+                        <h4>10th Marksheet</h4>
+                        <input type="file">
+                    </div>
+
+                    <div class="upload-card">
+                        <h4>12th Marksheet</h4>
+                        <input type="file">
+                    </div>
+
+                    <div class="upload-card">
+                        <h4>Identity Proof</h4>
+                        <input type="file">
+                    </div>
+
+                    <div class="upload-card">
+                        <h4>Transfer Certificate</h4>
+                        <input type="file">
+                    </div>
+                </div>
+            </section>
+
+            <!-- SOP -->
+            <section class="form-section">
+                <h3>Statement of Purpose</h3>
+
+                <div class="input-box full-width">
+                    <label>Tell us why you want to join GlobalTech University *</label>
+                    <textarea placeholder="Write your statement here..."></textarea>
+                </div>
+            </section>
+
+            <!-- DECLARATION -->
+            <section class="form-section">
+                <h3>Declaration</h3>
+
+                <div class="declaration-box">
+                    <label>
+                        <input type="checkbox" id="declaration">
+                        I hereby declare that all information provided by me is correct and authentic.
+                    </label>
+                </div>
+            </section>
+
+            <!-- BUTTONS -->
+            <div class="button-section">
+                <button type="submit" class="submit-btn">Submit Application</button>
+                <button type="reset" class="reset-btn">Reset Form</button>
+            </div>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+
+            <div>
+                <h3>GlobalTech University</h3>
+                <p>Building future leaders through world-class education and innovation.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <p>Admissions</p>
+                <p>Scholarships</p>
+                <p>Placements</p>
+                <p>Research</p>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <p>Email: admissions@globaltech.edu</p>
+                <p>Phone: +91 9876543210</p>
+                <p>Address: Innovation City, India</p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 GlobalTech University. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
